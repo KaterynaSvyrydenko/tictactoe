@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crosses And Zeros</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="deep-purple lighten-2">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo right">Logo</a>
+                <ul class="left hide-on-med-and-down">
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class=" deep-purple lighten-5">
+        <div id="main">
+            <h1>Crosses And Zeros</h1>
+
+            <!-- Game Instructions -->
+            <p id="ins">
+                <b><span class="player_first"></span></b>
+            </p>
+            <br><br>
+            <!-- 3*3 grid of Boxes -->
+            <div class="line">
+                <div class="field-elem" data-index="0"></div>
+                <div class="field-elem" data-index="1"></div>
+                <div class="field-elem" data-index="2"></div>
+            </div>
+            <div class="line">
+                <div class="field-elem" data-index="3"></div>
+                <div class="field-elem" data-index="4"></div>
+                <div class="field-elem" data-index="5"></div>
+            </div>
+            <div class="line">
+                <div class="field-elem" data-index="6"></div>
+                <div class="field-elem" data-index="7"></div>
+                <div class="field-elem" data-index="8"></div>
+            </div>
+            <!-- Grid end here  -->
+            <br><br><br>
+            <!-- Button to reset game -->
+            <button id="reset">
+                RESET
+            </button>
+
+            <br><br>
+            <!-- Space to show player turn -->
+            <p id="print"></p>
+        </div>
+    </main>
+    <footer class="page-footer deep-purple">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Crosses</h5>
+                    <p class="grey-text text-lighten-4"></p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2022 Copyright Text
+            </div>
+        </div>
+    </footer>
+    <div class="modal-finish">
+        <p class="modal_text">Player Name won</p>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
