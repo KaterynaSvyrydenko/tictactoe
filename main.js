@@ -16,12 +16,11 @@ let callbackNextPlayer = function(name) {
 
 const NewGame = new Game(size, callbackDrawStep, callbackNextPlayer);
 
-// with click find in Array Field element witch compared with e.target
+// по клику находим в массиве field  элемент, который соответствует e.target. 
 for( let k = 0; k < fieldEls.length; k++ ) {
     fieldEls[k].addEventListener("click", (e) => {
        
         let target = e.target;
-
         let i = Math.floor(target.getAttribute("data-index") / 3);
         let j = target.getAttribute("data-index") % 3;
 
@@ -30,18 +29,16 @@ for( let k = 0; k < fieldEls.length; k++ ) {
         }
 
         if(NewGame.gameOver) {
-            return
+            return;
         }
-       
     });
-    
 }
 
 
 resetBtn.addEventListener("click", () => {
     NewGame.resetGame();
 
-    // clear front part
+    // clear front-end field
     for ( let k = 0; k < fieldEls.length; k++ ) {
         fieldEls[k].innerHTML = " ";
     }
